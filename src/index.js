@@ -12,10 +12,31 @@ const buttons = {
   contactButton: { element: document.querySelector('.contactButton'), component: contact }
 };
 
+// function loadComponent(component) {
+//   content.innerHTML = '';
+//   content.appendChild(component());
+// }
+
+
+//new function
 function loadComponent(component) {
-  content.innerHTML = '';
-  content.appendChild(component());
+  // Add hidden class for transition
+  content.classList.add('hidden');
+
+  // Wait for the transition to end
+  setTimeout(() => {
+    content.innerHTML = ''; // Clear current content
+    content.appendChild(component()); // Load new component
+
+    // Trigger reflow to restart the transition
+    void content.offsetWidth;
+
+    // Remove hidden class to show new content with transition
+    content.classList.remove('hidden');
+  }, 500); // Duration should match the CSS transition duration
 }
+//end new function
+
 
 function initializeEventListeners() {
   for (let key in buttons) {
