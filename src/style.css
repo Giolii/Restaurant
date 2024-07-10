@@ -1,0 +1,117 @@
+@font-face {
+    font-family: Cafe;
+    src: url(./cafe.otf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+*,*::after,*::before{
+    font-family: Cafe;
+}
+
+button{
+    font-size: 30px;
+    border-style: none;
+    background-color: #4681f4;
+    border-radius: 20px;
+}
+h1{
+    font-size: 50px;
+}
+
+body{
+display: grid;
+grid-template-rows: 30px 1fr;
+background-color:  hsl(220, 89%, 90%);
+}
+.nav-bar{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+.homePage{
+    display: grid;
+    grid-template-rows: 100px, 1fr,1fr, 300px;
+}
+
+.main-pic{
+justify-self: center;
+width: 100%;
+height: 400px;
+object-fit: cover;  
+object-position: 0 60%;
+}
+.my-restaurant{
+    text-shadow: 3px 3px 3px rgb(255, 255, 255),
+    4px 4px 14px rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: -70px;
+    position: relative;
+    z-index: 1;
+}
+.container-head-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+.container-head-img img{
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+}
+.description-restaurant{
+    text-align: center;
+    justify-self: center;
+    background-color: hsl(220, 89%, 62%);
+    border-radius: 20px;
+    padding: 20px;
+    width: 60%;
+}
+.menuPage{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 50px;
+margin-top: 100px;
+}
+
+.imgRecipe{
+    width: 200px;
+    border-radius: 50%;
+    height: 200px;
+    object-fit:cover;
+}
+.menuItem{
+    text-align: center;
+    place-items: center;
+    width: 300px;
+    display: grid;
+    border: 1px solid #000;
+}
+.aboutPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.aboutImg{
+    width: 80%;
+    max-width: 700px;
+}
+
+.aboutDescription{
+    border: 1px solid #000;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.container{
+    text-align: center;
+
+}
+ul{
+    list-style-type: none;
+}
