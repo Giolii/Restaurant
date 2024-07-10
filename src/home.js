@@ -2,7 +2,7 @@ export default function home() {
     const mainPage = document.createElement('div');
     mainPage.classList.add('homePage')
     mainPage.innerHTML = `
-    <h1 class="my-restaurant">My Restaurant</h1>
+    <h1 class="my-restaurant">Via Alloro</h1>
         <img class="main-pic" src="https://panoramicrestaurant.com/wp-content/uploads/2023/07/2TH08812-1-scaled.jpg" alt="Main room of a restaurant">
         <div class="container-head-img">
             <img src="https://cdn.vox-cdn.com/thumbor/Dfg4c7kTQMRGfJtyxrV8QarcHqE=/0x0:978x612/1200x900/filters:focal(411x228:567x384)/cdn.vox-cdn.com/uploads/chorus_image/image/62994272/Screen_Shot_2018_11_05_at_12.57.46_PM.6.png" alt="">
